@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--Nathan Boles-->
+<html>
+	<head>
+		<title>Nathan Boles Games - Login</title>
+		<link rel="stylesheet" href="css/mainStyle.css">
+	</head>
+	<body>
+		<div class="topHeading">
+			<h1><b>Nathan Boles Games</b></h1>
+		</div>
+		<div>
+			<ul align="center">
+				<li class="line"><a href="index.html">Home</a></li>
+				<li class="line"><a href="about.html">About</a></li>
+				<li class="line"><a href="games.html">Games</a></li>
+				<li class="line"><a href="register.html">Register</a></li>
+				<li class="line"><a href="login.html">Login</a></li>
+			</ul>
+		</div>
+		<div align="center" class="login">
+			<form onsubmit="checkCode(event)" id="form">
+				<p><label>Username <input type="text" name="username" id="username" maxlength="20" minlenth="4" required /> </label></p>
+				<p><label>Password <input type="password" name="password" id="password" maxlength="20" minlenth="4" required /> </label></p>
+				<p><input type="submit" value="Log In" /></p>
+			</form>
+		</div>
+	</body>
+	<script>
+		function checkCode(e){
+			e.preventDefault();
+			
+			
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+			
+			console.log(username);
+			console.log(password);
+			
+			if (username === "Birb123" && password === "Birb123")
+			{
+				window.location.href = "loginsecret.html";
+			}
+			else
+			{
+				alert("Username or Password is wrong");
+			}
+			
+		}
+	</script>
+</html>
+
