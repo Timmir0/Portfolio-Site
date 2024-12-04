@@ -2,7 +2,7 @@
 <!--Nathan Boles-->
 <html>
 	<head>
-		<title>Nathan Boles Games - Twilit Wisps</title>
+		<title>Nathan Boles Games - Artscapade</title>
 		<link rel="stylesheet" href="css/mainStyle.css">
 	</head>
 	<body>
@@ -14,24 +14,25 @@
 				<li class="line"><a href="index.html">Home</a></li>
 				<li class="line"><a href="about.html">About</a></li>
 				<li class="line"><a href="games.html">Games</a></li>
-				<li class="line"><a href="resume.html">Resume</a></li>
 			</ul>
 		</div>
 		<div class="portfolio">
 			<p><font size="6"><a href="https://timmir.itch.io/project-artscapade">Play Now on Itch.io</a></font></p>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/K-G_kZou7TM?si=nrtelAGlgDpEYKJ6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/a-Qnyoc7m0A?si=UietohCOerc-6_Rv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 			<p><font size = 6>Artscapade</font></p>
-			<p>Work in Progress</p>
-			<p>[Game Designer, Programmer]</p>
-			<p>A capstone project I am currently working with five other people with. You play as a security guard who is using a drone to defend the museum from thieves. The game is currently still a work in progress, with my team planning to have it completed Spring 2024.</p>
+			<p>[Project Lead, Game Designer, Lead Programmer]</p>
+			<p>The capstone project that I worked with Team Artscapade where you play as a security guard whose goal is to defend a museum from thieves using security drones.</p>
 			<div class="container">
-				<div class="art"><image src="images/Artscapade Screenshot 1.jpg" alt="Room 1 of the artscapade playtest with a number of art pieces on display. The drone ready to move out." width="420" height="240"></div>
-				<div class="art"><image src="images/Artscapade Screenshot 2.jpg" alt="Room 4 of the Artscapade playtest with a number of art pieces on display. Two thieves are in the screen with one of the drones heading towards them." width="420" height="240"></div>
-				<div class="art"><image src="images/Artscapade Screenshot 3.jpg" alt="Room 2 of the Artscapade playtest with a number of art pieces on display. Two thieves are on the screen slightly with one of the drones heading towards them. Lines are on the minimap in the corner showing where the drones are heading." width="420" height="240"></div>
+				<div class="art"><image src="images/Artscapade Screenshot April Showcase 1.jpg" alt="A picture of a museums lobby with a drone floating on screen." width="420" height="240"></div>
+				<div class="art"><image src="images/Artscapade Screenshot April Showcase 2.jpg" alt="An image of a map of a museum with two dots and lines leading away from them. In the corner there is a small picture of the museums lobby." width="420" height="240"></div>
+				<div class="art"><image src="images/Artscapade Screenshot April Showcase 3.jpg" alt="Exhibit Hall 2 of the museum is on screen with a thief trying to steal a painting a drone not to far behind." width="420" height="240"></div>
 			</div>
-			<p>My main focus, so far, have been to create a system of movement for the drones the player controls as well as creating the AI for the thieves. The drones movement is slightly unusual, with the player being asked to draw lines from the drone to the drones destination. Thus the player has full control of multiple drone movements at the cost of it taking time to draw these out. We are seeking to make this drawing more integral as we go on with the inclusion of power ups in the near future. The drones also have a EMP skill I scripted that they can use to capture the thieves.</p>
-			<p>The thief AI, meanwhile, is pretty simple, but with the ability to develope as the project continues. They have a set number of paths they can follow going towards one of the artpieces. However they aren't able to move while the camera is watching them. This is due to while trying to work towards keeping the thieves somewhat stealthy, they essentially teleport from one point to another. We plan to add more animation and make the thieves more complicated as the project goes on.</p>
-			<p>I also developed the playtest UI, though there are plans to change that in a future build as we try to make the game easier to play. The minimap, however, has worked well for it's purposes, and has been well recieved during playtests.</p>
+			<p>My responsibilies on this project were many. I took the brunt of a lot of the scripting needed to complete this project. That primarily means I was in charge of many of the more mechanical heavy parts when it comes to making this game. This includes the drones controls, our thieves AI, our map, and many other various parts.</p>
+			<p>The drone controls are rather simple all things considered. I have the drone follow a path of points created by the player drawing on the minimap. This in turn uses a line renderer that edits in real time as the player draws out the path. If the path ends up running into any obstacles the drone can't move pass, the path will automatically end as the drone heads in that direction. This ended up taking a lot of time debugging as new ways to cut paths through walls were discovered during playtesting, but the final iteration proved to be solid overall.</p>
+			<p>The next thing I was in charge of was the thief AI and placement within maps. The thieves themselves don't actually move through the museum in the traditional method. Instead they teleport from point to point to sell the illusion of the theives sneaking around, dodging the camera, and trying to be sneaky. For this, they have multiple different paths that they each are able to take, with different treasures that they are able to steal. Thus the importance to use the Security Drones pulse to send them back to step 1.</p>
+			<p>The map itself has notably went under a number of iterations, but the main purpose had remained the same. It allows the player to move the drones around while also chosing specific camera's they want to watch similar to games like FNAF. The biggest change during the many iteration of our game is changing the map from being a always present minimap on screen to giving it's own space. This meant shifting a lot of things around and experimenting, but this also allowed far smoother control of our drones, especially on bigger maps.</p>
+			<p>While the above is the brunt of my scripting work, I also did a lot of miscellaneous work with the rest of my group. A lot of which includes speaking to teammates on what needed to be done and what I can do to make it easier for them to get it done. There was also a decent amount of time spent on bug fixing, both my own and bugs caused by other group members.</p>
+			<p>Overall the project proved to be an enormous team effort that I believe we are all proud of.</p>
 		</div>
 	</body>
 </html>
